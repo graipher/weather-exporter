@@ -14,7 +14,13 @@ Build and run with Docker:
 
 ```sh
 docker build -t weather-exporter .
-docker run --it -rm -e LAT=50.941311520039356 -e LON=6.958143531830011 -e UNITS=metric -e CITY=Cologne -e OPENWEWATHER_API_KEY=${OPENWEATHER_API_KEY} weather-exporter
+docker run --it -rm \
+    -e LAT=50.941311520039356 \
+    -e LON=6.958143531830011 \
+    -e UNITS=metric \
+    -e CITY=Cologne \
+    -e OPENWEATHER_API_KEY=${OPENWEATHER_API_KEY} \
+    weather-exporter
 ```
 
 ## Limitations

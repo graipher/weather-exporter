@@ -120,9 +120,9 @@ func main() {
     }
 
 	// Get and handle errors for OPENWEWATHER_API_KEY
-	apiKey := os.Getenv("OPENWEWATHER_API_KEY")
+	apiKey := os.Getenv("OPENWEATHER_API_KEY")
 	if apiKey == "" {
-		log.Fatal("OPENWEWATHER_API_KEY is empty")
+		log.Fatal("OPENWEATHER_API_KEY is empty")
 	}
 	q.Add("appid", apiKey)
 	qString = q.Encode()
